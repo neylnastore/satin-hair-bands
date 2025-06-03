@@ -1,1 +1,1198 @@
-sddd
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satin Hair Bands - Bandana Satin Premium untuk Rambut Sehat</title>
+    <meta name="description" content="Lindungi rambut Anda dengan Satin Hair Bands premium. Mencegah kusut, menjaga kelembaban, dan memberikan tidur nyaman. Beli 1 GRATIS 1!">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Satin Hair Bands - Bandana Satin Premium">
+    <meta property="og:description" content="Lindungi rambut Anda dengan Satin Hair Bands premium. Beli 1 GRATIS 1!">
+    <meta property="og:image" content="https://cdn.fastcdnshop.com/image/618fde469086508cb05e781aac53be278f29a11d-700.webp">
+    <meta property="og:type" content="product">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-image {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin: 30px 0;
+            animation: slideInUp 1s ease-out 0.4s both;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        /* Floating Elements */
+        .floating-stats {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 1000;
+            animation: slideInRight 1s ease-out 0.8s both;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .stat-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.7rem;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .countdown-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 60px;
+        }
+
+        .countdown-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Product Gallery */
+        .product-gallery {
+            background: white;
+            padding: 60px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #333;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Features Section */
+        .features {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 80px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(102,126,234,0.3);
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* How to Use Section */
+        .how-to-use {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .usage-gif {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            margin: 30px 0;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Price Banner */
+        .price-banner {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 100;
+            box-shadow: 0 -10px 30px rgba(0,0,0,0.2);
+        }
+
+        .price-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .price-info {
+            flex: 1;
+        }
+
+        .original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+
+        .current-price {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .discount-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .cta-button {
+            background: white;
+            color: #ff6b6b;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Order Popup */
+        .order-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 1000;
+            transform: translateX(-400px);
+            transition: all 0.5s ease;
+            max-width: 350px;
+        }
+
+        .order-popup.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 15px;
+            right: 18px;
+            background: none;
+            border: none;
+            font-size: 2em;
+            color: #999;
+            cursor: pointer;
+        }
+
+        .popup-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            color: purple;
+        }
+
+        .popup-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .popup-text {
+            font-size: 0.9em;
+        }
+
+        .popup-name {
+            font-weight: 700;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .popup-location {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .floating-stats {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 20px 0;
+                max-width: 100%;
+            }
+
+            .countdown {
+                flex-wrap: wrap;
+            }
+
+            .countdown-item {
+                min-width: 50px;
+            }
+
+            .price-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .price-banner {
+                padding: 20px 0;
+            }
+
+            .current-price {
+                font-size: 1.4rem;
+            }
+
+            .original-price {
+                font-size: 1rem;
+            }
+
+            .discount-text {
+                font-size: 0.85rem;
+                padding: 3px 10px;
+            }
+
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            .feature-card,
+            .testimonial-card {
+                padding: 25px 20px;
+            }
+
+            .price-banner {
+                padding: 15px 0;
+            }
+
+            .current-price {
+                font-size: 1.3rem;
+            }
+
+            .original-price {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                padding: 8px 20px;
+                font-size: 0.95rem;
+            }
+
+            .order-popup {
+                right: 10px;
+                bottom: 10px;
+                max-width: calc(100vw - 20px);
+            }
+        }
+
+        /* Auto scroll hint */
+        .scroll-hint {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .scroll-hint::after {
+            content: '↓';
+            display: block;
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Stats -->
+    <div class="floating-stats">
+        <div class="stat-item">
+            <div class="stat-icon">👥</div>
+            <span><span id="viewers">1,247</span> sedang melihat</span>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">📦</div>
+            <span>Stok: <span id="stock">78</span> tersisa</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Satin Hair Bands Premium</h1>
+                <p class="tagline">Lindungi rambut cantik Anda dengan bandana satin mewah yang menjaga kelembaban dan mencegah kerusakan rambut saat tidur</p>
+                
+                <img src="https://cdn.fastcdnshop.com/image/618fde469086508cb05e781aac53be278f29a11d-700.webp" alt="Satin Hair Bands Premium" class="hero-image">
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <div class="countdown-title">⚡ PENAWARAN TERBATAS BERAKHIR DALAM:</div>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">23</span>
+                            <span class="countdown-label">Jam</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">45</span>
+                            <span class="countdown-label">Menit</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">32</span>
+                            <span class="countdown-label">Detik</span>
+                        </div>
+                    </div>
+                    <p>Jangan sampai terlewat! Promo BELI 1 GRATIS 1 terbatas!</p>
+                </div>
+            </div>
+            <div class="scroll-hint">Gulir ke bawah untuk info lebih lanjut</div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section class="product-gallery">
+        <div class="container">
+            <h2 class="section-title">Koleksi Warna Cantik</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/640398e576c81839a4a154deba16549608619ad5-600.webp" alt="Satin Hair Band Warna Elegan">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/5c94068a350488f92fc0963cf66b78e723ed761d-600.webp" alt="Satin Hair Band Premium">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/ba84a996611e9a237271f1b06cc1f940db2778fd-600.webp" alt="Satin Hair Band Berkualitas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">4 Keunggulan Utama</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">100% Satin Berkualitas</h3>
+                    <p class="feature-description">Dibuat dari bahan satin premium yang lembut dan tidak menyerap minyak alami rambut, menjaga kelembaban rambut sepanjang malam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Anti Kusut & Patah</h3>
+                    <p class="feature-description">Permukaan halus satin mengurangi gesekan saat tidur, mencegah rambut kusut, patah, dan kerusakan di pagi hari.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💤</div>
+                    <h3 class="feature-title">Tidur Nyaman</h3>
+                    <p class="feature-description">Desain ergonomis yang tidak ketat namun tetap aman, memberikan kenyamanan maksimal untuk tidur sepanjang malam.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Warna Cantik</h3>
+                    <p class="feature-description">Tersedia dalam berbagai pilihan warna elegan yang cocok untuk semua gaya dan kepribadian Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="how-to-use">
+        <div class="container">
+            <h2 class="section-title">Cara Penggunaan</h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px;">Sangat mudah digunakan! Lihat cara pakainya:</p>
+            <img src="https://cdn.fastcdnshop.com/image/edca1bc0ac2c0686e9c91d818e461642c1cfb83d.gif" alt="Cara menggunakan Satin Hair Bands" class="usage-gif">
+        </div>
+    </section>
+
+    <!-- Model Images -->
+    <section class="product-gallery">
+        <div class="container">
+            <h2 class="section-title">Model Cantik dengan Satin Hair Bands</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/10681582e7927c3730ac88debddcf777b020d8c1.webp" alt="Model dengan Satin Hair Band">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/759de221bbf8dfdcfd0923f5a7c0722c2fd057a0.webp" alt="Model cantik Satin Hair Band">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cdn.fastcdnshop.com/image/ce7ec045f7780d0ba444c58c002631773a99a0c1.webp" alt="Satin Hair Band untuk tidur">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Apa Kata Mereka?</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Beneran game changer banget! Rambut aku jadi gak kusut lagi pas bangun tidur. Sekarang rambut lebih halus dan berkilau. Worth it banget!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sari Melani</h4>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Pas pertama coba langsung ketagihan! Bahannya lembut banget dan gak bikin gerah. Rambut jadi lebih sehat dan gak rontok banyak."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Anjani Putri</h4>
+                            <p>Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Setelah pakai ini, rambut keriting aku jadi lebih terjaga bentuknya. Gak perlu styling ulang tiap pagi. Praktis banget!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Maya Sinta</h4>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Kualitasnya premium tapi harganya affordable. Aku udah rekomen ke temen-temen dan mereka juga cocok semua. Top!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <h4>Linda Sari</h4>
+                            <p>Yogyakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Banner -->
+    <div class="price-banner">
+        <div class="container">
+            <div class="price-content">
+                <div class="price-info">
+                    <div class="original-price">Harga Normal: Rp 247.500</div>
+                    <div class="current-price">Rp 165.000</div>
+                    <div class="discount-text">🎁 BELI 1 GRATIS 1</div>
+                </div>
+                <a href="https://vera.orderonline.id/satin-fabric-hair-bands" class="cta-button" target="_blank">
+                    PESAN SEKARANG
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Popup -->
+    <div class="order-popup" id="orderPopup">
+        <button class="popup-close" onclick="closePopup()">&times;</button>
+        <div class="popup-content">
+            <div class="popup-avatar" id="popupAvatar">SD</div>
+            <div>
+                <div class="popup-text">
+                    <div class="popup-name" id="popupName">Sari Dewi</div>
+                    <div class="popup-location" id="popupLocation">Jakarta Barat</div>
+                </div>
+        <div class="popup-text">
+            Baru saja memesan <strong>Satin Hair Bands (Beli 1 Gratis 1)</strong>
+        </div>
+    </div>
+    <script>
+        // Counter animations
+        function animateCounter(elementId, target, duration = 2000) {
+            const element = document.getElementById(elementId);
+            const start = parseInt(element.textContent);
+            const increment = (target - start) / (duration / 16);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Dynamic counters
+        function updateCounters() {
+            const viewers = Math.floor(Math.random() * 50) + 1200;
+            const stock = Math.floor(Math.random() * 10) + 15;
+            
+            document.getElementById('viewers').textContent = viewers;
+            document.getElementById('stock').textContent = stock;
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setHours(23, 59, 59, 999);
+            const distance = tomorrow.getTime() - now;
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Order Popup
+        const customers = [
+            { name: 'Sari Dewi', location: 'Jakarta Barat', avatar: 'SD' },
+            { name: 'Maya Indira', location: 'Bandung', avatar: 'MI' },
+            { name: 'Rina Sari', location: 'Surabaya', avatar: 'RS' },
+            { name: 'Dewi Lestari', location: 'Medan', avatar: 'DL' },
+            { name: 'Novi Pratiwi', location: 'Yogyakarta', avatar: 'NP' },
+            { name: 'Putri Ayu', location: 'Malang', avatar: 'PA' },
+            { name: 'Linda Cahya', location: 'Semarang', avatar: 'LC' },
+            { name: 'Anita Sari', location: 'Denpasar', avatar: 'AS' },
+            { name: 'Fitri Handayani', location: 'Makassar', avatar: 'FH' },
+            { name: 'Wulan Dari', location: 'Palembang', avatar: 'WD' },
+            { name: 'Mega Wati', location: 'Bekasi', avatar: 'MW' },
+            { name: 'Dian Puspita', location: 'Tangerang', avatar: 'DP' }
+        ];
+
+        function showOrderPopup() {
+            const popup = document.getElementById('orderPopup');
+            const randomCustomer = customers[Math.floor(Math.random() * customers.length)];
+            
+            document.getElementById('popupName').textContent = randomCustomer.name;
+            document.getElementById('popupLocation').textContent = randomCustomer.location;
+            document.getElementById('popupAvatar').textContent = randomCustomer.avatar;
+            
+            popup.classList.add('show');
+            
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 5000);
+        }
+
+        function closePopup() {
+            document.getElementById('orderPopup').classList.remove('show');
+        }
+
+        // Auto scroll functionality
+        let hasAutoScrolled = false;
+        let scrollTimer;
+
+        function resetScrollTimer() {
+            clearTimeout(scrollTimer);
+            if (!hasAutoScrolled) {
+                scrollTimer = setTimeout(() => {
+                    if (!hasAutoScrolled && window.scrollY < 100) {
+                        hasAutoScrolled = true;
+                        const targetPosition = window.innerHeight * 0.3;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 4000);
+            }
+        }
+
+        // Touch and scroll event handlers
+        function handleUserInteraction() {
+            hasAutoScrolled = true;
+            clearTimeout(scrollTimer);
+        }
+
+        // Initialize everything
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start counters
+            updateCounters();
+            setInterval(updateCounters, 30000);
+
+            // Start countdown
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            // Show order popup periodically
+            setTimeout(showOrderPopup, 3000);
+            setInterval(showOrderPopup, 15000);
+
+            // Auto scroll setup
+            resetScrollTimer();
+
+            // Add event listeners for user interaction
+            document.addEventListener('scroll', handleUserInteraction);
+            document.addEventListener('touchstart', handleUserInteraction);
+            document.addEventListener('mousedown', handleUserInteraction);
+            document.addEventListener('keydown', handleUserInteraction);
+
+            // Reset scroll timer on mouse movement (but only if no interaction yet)
+            document.addEventListener('mousemove', () => {
+                if (!hasAutoScrolled) {
+                    resetScrollTimer();
+                }
+            });
+
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.feature-card, .testimonial-card, .gallery-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Add floating animation to hero image
+            const heroImage = document.querySelector('.hero-image');
+            if (heroImage) {
+                setInterval(() => {
+                    heroImage.style.animation = 'none';
+                    setTimeout(() => {
+                        heroImage.style.animation = 'float 3s ease-in-out infinite';
+                    }, 10);
+                }, 6000);
+            }
+
+            // Add subtle parallax effect (disabled for mobile to prevent issues)
+            if (window.innerWidth > 768) {
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const parallax = document.querySelector('.hero');
+                    if (parallax && scrolled < window.innerHeight) {
+                        const speed = scrolled * 0.3;
+                        parallax.style.transform = `translateY(${speed}px)`;
+                    }
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add click tracking for CTA buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Add click animation
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+
+            // Add hover effects for interactive elements
+            document.querySelectorAll('.gallery-item, .feature-card, .testimonial-card').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+
+            // Mobile swipe gesture for popup
+            let startY = 0;
+            let endY = 0;
+
+            document.getElementById('orderPopup').addEventListener('touchstart', function(e) {
+                startY = e.touches[0].clientY;
+            });
+
+            document.getElementById('orderPopup').addEventListener('touchend', function(e) {
+                endY = e.changedTouches[0].clientY;
+                if (startY - endY > 50) { // Swipe up
+                    closePopup();
+                }
+            });
+
+            // Add loading states for images
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                
+                img.addEventListener('error', function() {
+                    this.style.opacity = '0.5';
+                    this.alt = 'Gambar tidak dapat dimuat';
+                });
+
+                // Set initial opacity
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            });
+
+            // Performance optimization: Lazy loading for images
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src || img.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+
+            console.log('Satin Hair Bands Landing Page loaded successfully! 🎉');
+        });
+
+        // Add custom cursor effect for premium feel
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.querySelector('.custom-cursor');
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+        });
+
+        // Emergency fallback for critical functions
+        window.addEventListener('error', function(e) {
+            console.warn('Error caught:', e.error);
+            // Ensure countdown still works
+            if (!document.getElementById('hours').textContent) {
+                updateCountdown();
+            }
+        });
+
+        // Add SEO and accessibility improvements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add alt texts dynamically if missing
+            document.querySelectorAll('img:not([alt])').forEach(img => {
+                img.alt = 'Satin Hair Bands Premium - Bandana Satin untuk Rambut Sehat';
+            });
+
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closePopup();
+                }
+            });
+
+            // Add focus styles for accessibility
+            const style = document.createElement('style');
+            style.textContent = `
+                .cta-button:focus,
+                .popup-close:focus {
+                    outline: 2px solid #667eea;
+                    outline-offset: 2px;
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
