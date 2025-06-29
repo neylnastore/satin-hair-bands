@@ -12,6 +12,40 @@
         body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* Responsive base styles */
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
         }
         
         .gradient-bg {
@@ -43,10 +77,38 @@
         
         .gallery-image {
             transition: all 0.3s ease;
+            overflow: hidden;
+            border-radius: 0.5rem;
         }
         
-        .gallery-image:hover {
+        .gallery-image img {
+            transition: transform 0.3s ease;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .gallery-image:hover img {
             transform: scale(1.03);
+        }
+
+        /* Gallery grid for all devices */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
         
         .modal {
@@ -60,11 +122,33 @@
         .testimonial-card {
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         
         .testimonial-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Testimonial grid */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
         
         .sticky-header {
@@ -72,11 +156,20 @@
             top: 0;
             z-index: 50;
             transition: all 0.3s ease;
+            width: 100%;
+            backdrop-filter: blur(5px);
+            background-color: rgba(255,255,255,0.9);
         }
         
         .sticky-header.scrolled {
             background-color: rgba(255,255,255,0.95);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            .sticky-header {
+                padding: 1rem 0;
+            }
         }
         
         .countdown-item {
@@ -86,7 +179,7 @@
 </head>
 <body class="bg-white text-gray-800">
     <!-- Notification Popup -->
-    <div id="notification" class="fixed bottom-4 right-4 bg-white p-3 shadow-lg rounded-xl notification-slide z-50 hidden md:block" style="max-width: 280px;">
+    <div id="notification" class="fixed bottom-4 right-4 bg-white p-3 shadow-lg rounded-xl notification-slide z-50 hidden" style="max-width: 280px;">
         <div class="flex items-start space-x-2">
             <div class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center flex-shrink-0">
                 <span class="text-pink-500 font-bold text-sm" id="customerInitial">A</span>
@@ -114,11 +207,11 @@
             <div class="flex items-center space-x-4">
                 <div class="flex items-center space-x-1 bg-gray-100 px-3 py-1 rounded-full">
                     <i class="fas fa-eye text-gray-600 text-xs"></i>
-                    <span class="text-sm font-medium"><span id="viewCount">892</span>
+                    <span class="text-sm font-medium"><span id="viewCount">892</span></span>
                 </div>
                 <div class="flex items-center space-x-1 bg-gray-100 px-3 py-1 rounded-full">
                     <i class="fas fa-box text-gray-600 text-xs"></i>
-                    <span class="text-sm font-medium"><span id="headerStockCount">85</span>
+                    <span class="text-sm font-medium"><span id="headerStockCount">85</span></span>
                 </div>
             </div>
         </div>
@@ -312,7 +405,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Galeri <span class="text-pink-500">Produk</span></h2>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="gallery-grid">
                 <div class="gallery-image cursor-pointer">
                     <img src="https://cdn.fastcdnshop.com/image/640398e576c81839a4a154deba16549608619ad5-600.webp" alt="Satin Hair Bands" class="w-full h-auto rounded-lg" onclick="openModal(this)">
                 </div>
@@ -371,7 +464,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Apa Kata <span class="text-pink-500">Pelanggan Kami?</span></h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="testimonial-grid">
                 <div class="bg-white p-6 rounded-xl testimonial-card">
                     <div class="flex items-center mb-4">
                         <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
@@ -751,18 +844,20 @@
             const stockElement = document.getElementById('stockCount');
             const stockElement2 = document.getElementById('stockCount2');
             
-            const viewersRect = viewersElement.getBoundingClientRect();
-            const stockRect = stockElement.getBoundingClientRect();
-            
-            if (!countersInitialized.viewers && viewersRect.top < window.innerHeight - 100) {
-                animateCounter(viewersElement, 892);
-                countersInitialized.viewers = true;
-            }
-            
-            if (!countersInitialized.stock && stockRect.top < window.innerHeight - 100) {
-                animateCounter(stockElement, 85);
-                animateCounter(stockElement2, 85);
-                countersInitialized.stock = true;
+            if (viewersElement && stockElement && stockElement2) {
+                const viewersRect = viewersElement.getBoundingClientRect();
+                const stockRect = stockElement.getBoundingClientRect();
+                
+                if (!countersInitialized.viewers && viewersRect.top < window.innerHeight) {
+                    animateCounter(viewersElement, 892);
+                    countersInitialized.viewers = true;
+                }
+                
+                if (!countersInitialized.stock && stockRect.top < window.innerHeight) {
+                    animateCounter(stockElement, 85);
+                    animateCounter(stockElement2, 85);
+                    countersInitialized.stock = true;
+                }
             }
         }
 
@@ -861,10 +956,14 @@
             setTimeout(showFakeOrder, 3000);
             
             // Then show every 8-12 seconds
-            setInterval(() => {
+            function scheduleNextNotification() {
                 const randomDelay = Math.floor(Math.random() * 4000) + 8000; // 8-12 seconds
-                setTimeout(showFakeOrder, randomDelay);
-            }, 12000);
+                setTimeout(() => {
+                    showFakeOrder();
+                    scheduleNextNotification();
+                }, randomDelay);
+            }
+            scheduleNextNotification();
         }
 
         // Image Gallery Modal
@@ -915,8 +1014,11 @@
                 const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
+                    const headerHeight = document.querySelector('.sticky-header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetPosition,
                         behavior: 'smooth'
                     });
                 }
